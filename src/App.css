@@ -117,6 +117,17 @@ body {
   background-color: var(--white);
 }
 
+/* Automated Rebalancing Section */
+.automated-rebalancing-section {
+  background-color: var(--light-gray);
+}
+
+.rebalancing-diagram pre {
+  font-family: 'monospace';
+  white-space: pre;
+  text-align: left;
+}
+
 .founder-photo {
   width: 250px;
   height: 250px;

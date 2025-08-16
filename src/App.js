@@ -3,6 +3,7 @@ import NavigationBar from './components/NavigationBar';
 import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
 import HowItWorksSection from './components/HowItWorksSection';
+import AutomatedRebalancingSection from './components/AutomatedRebalancingSection';
 import FounderSection from './components/FounderSection';
 import Footer from './components/Footer';
 import './App.css';
@@ -14,7 +15,8 @@ function App() {
       <HeroSection />
       <FeaturesSection />
       <HowItWorksSection />
-      <FounderSection />
+        <AutomatedRebalancingSection />
+        <FounderSection />
       <Footer />
     </div>
   );
