@@ -45,7 +45,7 @@ const AutomatedRebalancingSection = () => {
                 </defs>
               </svg>
               <p className="text-muted mt-3">
-                Illustration: The system automatically monitors and adjusts your asset ratios, ensuring your portfolio always aligns with your strategy.
+                This balance scale diagram illustrates the principle of automated rebalancing: When the proportions of assets in your portfolio, such as 'Asset A' and 'Asset B', become 'unbalanced' due to market fluctuations (e.g., shifting from an ideal 60% A, 40% B to 75% A, 25% B), the system automatically performs a 'rebalancing' operation to adjust the asset proportions back to your preset ideal state, maintaining portfolio stability and optimizing returns.
               </p>
             </div>
           </Col>
