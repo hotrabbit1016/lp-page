@@ -8,7 +8,7 @@ const FounderSection = () => {
         <h2 className="section-title">Meet the Founder</h2>
         <Row className="align-items-center">
           <Col md={5} className="text-center text-md-end mb-4 mb-md-0">
-            <Image src="/cofounder.jpeg" roundedCircle className="founder-photo" />
+            <Image src={process.env.PUBLIC_URL + "/cofounder.jpeg"} roundedCircle className="founder-photo" />
           </Col>
           <Col md={7}>
             <div className="founder-bio">
