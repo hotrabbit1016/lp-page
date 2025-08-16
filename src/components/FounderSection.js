@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Envelope } from 'react-bootstrap-icons';
 
 const FounderSection = () => {
   return (
@@ -13,6 +14,12 @@ const FounderSection = () => {
           <Col md={7}>
             <div className="founder-bio">
               <h3>Jack Wu</h3>
+              <p className="text-muted mb-4">
+                <Envelope size={20} className="me-2" />
+                <a href="mailto:hotrabbit1016@gmail.com" className="text-decoration-none text-muted">
+                  hotrabbit1016@gmail.com
+                </a>
+              </p>
               <p className="lead">
                 "As an early DeFi adopter, I saw the potential of liquidity mining but also its complexity. High barriers to entry were hindering participation in this financial revolution."
               </p>
