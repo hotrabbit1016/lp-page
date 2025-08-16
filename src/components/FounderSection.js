@@ -16,8 +16,8 @@ const FounderSection = () => {
               <h3>Jack Wu</h3>
               <p className="text-muted mb-4">
                 <Envelope size={20} className="me-2" />
-                <a href="mailto:hotrabbit1016@gmail.com" className="text-decoration-none text-muted">
-                  hotrabbit1016@gmail.com
+                <a href="mailto:hotrabbit101601@gmail.com" className="text-decoration-none text-muted">
+                  hotrabbit101601@gmail.com
                 </a>
               </p>
               <p className="lead">
