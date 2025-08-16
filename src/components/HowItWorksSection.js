@@ -17,9 +17,9 @@ const HowItWorksSection = () => {
       <Container>
         <h2 className="section-title">Get Started in 3 Simple Steps</h2>
         <Row>
-          <Step number="1" title="Connect Your Wallet" text="Securely connect your wallet in seconds. We are non-custodial, so you never give up control or ownership of your private keys." />
-          <Step number="2" title="Choose a Pool" text="Browse our curated and vetted list of liquidity pools. We provide key data like historical APY and risk scores to help you make informed decisions." />
-          <Step number="3" title="Deposit & Earn" text="Once you deposit, our dashboard comes to life. Watch your earnings grow in real-time and manage your positions effortlessly from one place." />
+          <Step number="1" title="Connect Your Wallet" text="Securely connect your wallet. We are non-custodial, so you retain full control of your private keys." />
+          <Step number="2" title="Choose a Pool" text="Browse curated liquidity pools. We provide key data like historical APY and risk scores for informed decisions." />
+          <Step number="3" title="Deposit & Earn" text="Deposit and watch earnings grow in real-time. Manage positions effortlessly from one dashboard." />
         </Row>
       </Container>
     </section>

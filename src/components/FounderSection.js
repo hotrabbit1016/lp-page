@@ -14,13 +14,13 @@ const FounderSection = () => {
             <div className="founder-bio">
               <h3>Jack Wu</h3>
               <p className="lead">
-                "As an early DeFi adopter, I was fascinated by the potential of liquidity mining. But like many, I quickly found myself lost in a sea of complex interfaces, impermanent loss calculators, and dozens of browser tabs. The high barrier to entry wasn't just inconvenient; it was keeping people from participating in this financial revolution."
+                "As an early DeFi adopter, I saw the potential of liquidity mining but also its complexity. High barriers to entry were hindering participation in this financial revolution."
               </p>
               <p>
-                "I knew there had to be a better way. I envisioned a single, elegant platform that could automate the tedious parts of yield farming—the tracking, the rebalancing, the security checks—while providing clear, actionable insights. It needed to be powerful enough for seasoned pros, yet simple enough for someone just starting out."
+                "I envisioned a platform to automate tedious yield farming tasks—tracking, rebalancing, security checks—while providing clear insights. It needed to be powerful for pros, yet simple for beginners."
               </p>
               <p>
-                "That vision became YieldWise. It's more than just a tool; it's a commitment to making decentralized finance truly accessible. My mission is to empower our users with the confidence and knowledge to achieve their financial goals in this exciting new landscape."
+                "That vision became YieldWise. It's a commitment to making decentralized finance accessible, empowering users to achieve their financial goals in this exciting landscape."
               </p>
             </div>
           </Col>

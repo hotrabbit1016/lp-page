@@ -21,17 +21,17 @@ const FeaturesSection = () => {
           <Feature
             icon={<PieChart size={50} className="text-success" />}
             title="All-in-One Dashboard"
-            text="Track your entire liquidity portfolio, including APY, impermanent loss estimations, and total value, across multiple DeFi protocols. No more spreadsheets or manual tracking."
+            text="Track your entire liquidity portfolio: APY, impermanent loss, and total value across DeFi protocols. No more manual tracking."
           />
           <Feature
             icon={<ArrowRepeat size={50} className="text-success" />}
             title="Automated Rebalancing"
-            text="Our intelligent algorithms monitor the market and can automatically rebalance your assets between pools based on your chosen strategy, maximizing returns and managing risk."
+            text="Intelligent algorithms automatically rebalance assets based on your strategy, maximizing returns and managing risk."
           />
           <Feature
             icon={<ShieldCheck size={50} className="text-success" />}
             title="Security First"
-            text="Your security is our priority. We utilize audited smart contracts and a non-custodial framework, meaning you always have full control over your funds."
+            text="Your security is our priority. We use audited smart contracts and a non-custodial framework, ensuring you always control your funds."
           />
         </Row>
       </Container>
