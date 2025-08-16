@@ -12,33 +12,26 @@ const AutomatedRebalancingSection = () => {
               Intelligently manage your investment portfolio, automatically adjusting asset ratios to optimize returns and reduce risk.
             </p>
             <div className="rebalancing-diagram mt-5 mb-5">
-              <svg width="400" height="300" viewBox="0 0 400 300">
+              <svg width="300" height="200" viewBox="0 0 300 200">
+                {/* Unbalanced Scale */}
+                <line x1="50" y1="100" x2="250" y2="80" stroke="#666" stroke-width="3" /> {/* Arm */}
+                <circle cx="150" cy="100" r="5" fill="#333" /> {/* Pivot */}
+                <rect x="40" y="110" width="30" height="30" fill="#f44336" /> {/* Left weight */}
+                <text x="55" y="130" text-anchor="middle" fill="white" font-size="12">A</text>
+                <rect x="230" y="90" width="30" height="30" fill="#2196f3" /> {/* Right weight */}
+                <text x="245" y="110" text-anchor="middle" fill="white" font-size="12">B</text>
+                <text x="150" y="160" text-anchor="middle" font-size="14">Unbalanced</text>
+
+                {/* Arrow for Rebalancing */}
+                <line x1="150" y1="170" x2="150" y2="190" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+                <text x="160" y="180" font-size="12">Rebalance</text>
+
                 {/* Define arrowhead marker */}
                 <defs>
                   <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
                     <polygon points="0 0, 10 3.5, 0 7" />
                   </marker>
                 </defs>
-
-                {/* Initial State */}
-                <rect x="100" y="20" width="200" height="50" fill="#e0f7fa" stroke="#00bcd4" stroke-width="2" rx="10" ry="10" />
-                <text x="200" y="50" text-anchor="middle" font-size="16">Initial Portfolio (60% A, 40% B)</text>
-
-                {/* Arrow 1 */}
-                <line x1="200" y1="70" x2="200" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
-                <text x="210" y="85" font-size="12">Market Fluctuation</text>
-
-                {/* Fluctuated State */}
-                <rect x="100" y="110" width="200" height="50" fill="#ffe0b2" stroke="#ff9800" stroke-width="2" rx="10" ry="10" />
-                <text x="200" y="140" text-anchor="middle" font-size="16">Fluctuated Portfolio (75% A, 25% B)</text>
-
-                {/* Arrow 2 */}
-                <line x1="200" y1="160" x2="200" y2="190" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
-                <text x="210" y="175" font-size="12">Automated Rebalancing</text>
-
-                {/* Rebalanced State */}
-                <rect x="100" y="200" width="200" height="50" fill="#c8e6c9" stroke="#4caf50" stroke-width="2" rx="10" ry="10" />
-                <text x="200" y="230" text-anchor="middle" font-size="16">Rebalanced Portfolio (60% A, 40% B)</text>
               </svg>
               <p className="text-muted mt-3">
                 Illustration: The system automatically monitors and adjusts your asset ratios, ensuring your portfolio always aligns with your strategy.
