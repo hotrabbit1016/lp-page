@@ -12,24 +12,35 @@ const AutomatedRebalancingSection = () => {
               Intelligently manage your investment portfolio, automatically adjusting asset ratios to optimize returns and reduce risk.
             </p>
             <div className="rebalancing-diagram mt-5 mb-5">
-              <svg width="300" height="200" viewBox="0 0 300 200">
-                {/* Unbalanced Scale */}
-                <line x1="50" y1="100" x2="250" y2="80" stroke="#666" stroke-width="3" /> {/* Arm */}
-                <circle cx="150" cy="100" r="5" fill="#333" /> {/* Pivot */}
-                <rect x="40" y="110" width="30" height="30" fill="#f44336" /> {/* Left weight */}
-                <text x="55" y="130" text-anchor="middle" fill="white" font-size="12">A</text>
-                <rect x="230" y="90" width="30" height="30" fill="#2196f3" /> {/* Right weight */}
-                <text x="245" y="110" text-anchor="middle" fill="white" font-size="12">B</text>
-                <text x="150" y="160" text-anchor="middle" font-size="14">Unbalanced</text>
+              <svg width="400" height="250" viewBox="0 0 400 250">
+                {/* Scale Base */}
+                <rect x="180" y="200" width="40" height="10" fill="#666" rx="3" ry="3" />
+                <polygon points="190 200, 210 200, 200 180" fill="#666" /> {/* Triangle support */}
+
+                {/* Pivot */}
+                <circle cx="200" cy="180" r="6" fill="#999" />
+
+                {/* Arms */}
+                <line x1="80" y1="180" x2="320" y2="180" stroke="#999" stroke-width="4" stroke-linecap="round" />
+
+                {/* Unbalanced State - Left Pan (lower) */}
+                <circle cx="100" cy="195" r="30" fill="#f44336" opacity="0.8" />
+                <text x="100" y="200" text-anchor="middle" fill="white" font-size="16" font-weight="bold">A</text>
+                <text x="100" y="220" text-anchor="middle" fill="white" font-size="12">75%</text>
+
+                {/* Unbalanced State - Right Pan (higher) */}
+                <circle cx="300" cy="165" r="30" fill="#2196f3" opacity="0.8" />
+                <text x="300" y="170" text-anchor="middle" fill="white" font-size="16" font-weight="bold">B</text>
+                <text x="300" y="190" text-anchor="middle" fill="white" font-size="12">25%</text>
 
                 {/* Arrow for Rebalancing */}
-                <line x1="150" y1="170" x2="150" y2="190" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
-                <text x="160" y="180" font-size="12">Rebalance</text>
+                <line x1="200" y1="100" x2="200" y2="140" stroke="#00bfa6" stroke-width="3" marker-end="url(#arrowhead)" />
+                <text x="210" y="120" font-size="14" fill="#00bfa6">Rebalance</text>
 
                 {/* Define arrowhead marker */}
                 <defs>
                   <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" />
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#00bfa6" />
                   </marker>
                 </defs>
               </svg>
