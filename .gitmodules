@@ -1,0 +1,3 @@
+[submodule "lp-website"]
+	path = lp-website
+	url = https://github.com/hotrabbit1016/lp-website.git
